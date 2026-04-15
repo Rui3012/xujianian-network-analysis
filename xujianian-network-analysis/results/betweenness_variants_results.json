@@ -1,0 +1,83 @@
+{
+  "baseline_unweighted": {
+    "rare_mean": 0.002173463305640478,
+    "nonrare_mean": 0.0033192336396886614,
+    "ratio": 0.6548087726190751,
+    "p_value": 0.09979002099790021,
+    "name": "Unweighted betweenness"
+  },
+  "baseline_sim_weight": {
+    "rare_mean": 0.006042050079335669,
+    "nonrare_mean": 0.004068808219146449,
+    "ratio": 1.4849680186212277,
+    "p_value": 0.15408459154084592,
+    "name": "Similarity-as-weight betweenness",
+    "note": "Matches main text Section 4.2 primary specification"
+  },
+  "baseline_dist_weight": {
+    "rare_mean": 0.003008970985025063,
+    "nonrare_mean": 0.0031510006629255935,
+    "ratio": 0.9549255322058038,
+    "p_value": 0.9204079592040796,
+    "name": "Distance-as-weight betweenness",
+    "note": "distance = 1 - similarity, technically consistent convention"
+  },
+  "stabler": {
+    "rare_mean": 0.005278042176957081,
+    "nonrare_mean": 0.023516573032464284,
+    "ratio": 0.22443925693045588,
+    "p_value": 0.00019998000199980003,
+    "name": "Stabler betweenness",
+    "reference": "Segarra & Ribeiro (2015)",
+    "parameters": {
+      "n_perturbations": 100,
+      "sigma": 0.1
+    }
+  },
+  "gromov": {
+    "rare_mean": 0.4324255632403557,
+    "nonrare_mean": 0.6086262030696423,
+    "ratio": 0.7104944891616426,
+    "p_value": 0.00029997000299970003,
+    "name": "Gromov centrality",
+    "reference": "Babul & Reggiani (2022)"
+  },
+  "sensitivity": {
+    "n=50,sigma=0.05": {
+      "ratio": 0.22638073621872634,
+      "p_value": 0.0004997501249375312
+    },
+    "n=50,sigma=0.1": {
+      "ratio": 0.23417715440167503,
+      "p_value": 0.0004997501249375312
+    },
+    "n=50,sigma=0.15": {
+      "ratio": 0.2719775928217048,
+      "p_value": 0.0009995002498750624
+    },
+    "n=100,sigma=0.05": {
+      "ratio": 0.222986648209406,
+      "p_value": 0.0004997501249375312
+    },
+    "n=100,sigma=0.1": {
+      "ratio": 0.22443925693045588,
+      "p_value": 0.0004997501249375312
+    },
+    "n=100,sigma=0.15": {
+      "ratio": 0.2673402323238805,
+      "p_value": 0.0014992503748125937
+    },
+    "n=200,sigma=0.05": {
+      "ratio": 0.22377395290238272,
+      "p_value": 0.0004997501249375312
+    },
+    "n=200,sigma=0.1": {
+      "ratio": 0.2202551966415862,
+      "p_value": 0.0004997501249375312
+    },
+    "n=200,sigma=0.15": {
+      "ratio": 0.2572956290462811,
+      "p_value": 0.0009995002498750624
+    }
+  }
+}
