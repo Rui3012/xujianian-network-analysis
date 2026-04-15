@@ -1,6 +1,0 @@
-Measure,Mean (rare),Mean (non-rare),Ratio,Permutation p
-B1. Unweighted betweenness,0.002173,0.003319,0.655,0.0998
-B2. Similarity-as-weight betweenness,0.006042,0.004069,1.485,0.1541
-B3. Distance-as-weight betweenness,0.003009,0.003151,0.955,0.9204
-V1. Stabler betweenness,0.005278,0.023517,0.224,0.0002
-V2. Gromov centrality,0.432426,0.608626,0.710,0.0003
